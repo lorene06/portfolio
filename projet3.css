@@ -1,0 +1,100 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-image: url(projet.jpg);
+  color: white;
+  background-size: 1550px 775px;
+}
+
+h1 {
+  color: white;
+  position: absolute;
+  margin-left: 1em;
+}
+
+img {
+  height: 315px;
+  width: 315px;
+  position: absolute;
+  margin-top: 2em;
+}
+
+#img_1 {
+  margin-left: 12rem;
+}
+
+#img_2 {
+  margin-left: 33rem;
+}
+
+#img_3 {
+  margin-left: 54rem;
+}
+
+#img_4 {
+  margin-left: 75rem;
+}
+
+p {
+  color: black;
+  text-align: center;
+  margin: 5em 15em 0 15em;
+  font-size: 1.3em;
+  position: absolute;
+  margin-top: 20em;
+}
+
+p:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.link {
+  position: absolute;
+  font-size: 1.5em;
+  color: black;
+  margin-top: 25em;
+  margin-left: 2em;
+}
+
+#return:hover {
+  color: red;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*Tablette*/
+  body {
+    background-size: 1550px 1050px;
+  }
+  img {
+    height: 190px;
+    width: 190px;
+    top: 4em;
+  }
+  #img_1 {
+    margin-left: 11em;
+  }
+  #img_2 {
+    margin-left: 24rem;
+  }
+  #img_3 {
+    top: 17em;
+    margin-left: 11rem;
+  }
+  #img_4 {
+    top: 17em;
+    margin-left: 24rem;
+  }
+  p {
+    margin-left: 3em;
+    width: 30em;
+    top: 8em;
+  }
+  #return {
+    margin-left: 2em;
+    top: 10em;
+  }
+}

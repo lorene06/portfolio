@@ -1,0 +1,55 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #03045e;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 35px;
+  font-size: 5em;
+  margin-top: 0.5em;
+}
+
+@keyframes animationh1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: translateX(100px) rotate(180deg);
+  }
+
+  100% {
+    transform: translateX(0px) rotate(720deg);
+  }
+}
+
+h1:hover {
+  -webkit-animation: animationh1 3s;
+  animation: animationh1 3s;
+}
+
+.image {
+  height: auto;
+  width: 23rem;
+  position: absolute;
+  top: 200px;
+  left: 560px;
+}
+
+p {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 3em;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*Tablette*/
+  .image {
+    left: 13em;
+  }
+}

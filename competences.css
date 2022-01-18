@@ -1,0 +1,113 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-image: url(competences.jpg);
+  color: white;
+  background-size: 1550px 725px;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 2.7em;
+}
+
+li {
+  line-height: 1em;
+  font-size: 1.3em;
+  margin-left: 1.5em;
+}
+
+p {
+  margin-right: 3em;
+  font-size: 1.15em;
+}
+
+li,
+p {
+  margin-top: 2em;
+}
+
+li:hover {
+  text-decoration: underline overline;
+  text-decoration-color: white;
+}
+
+.container {
+  float: left;
+  width: 350px;
+  margin-top: -20px;
+  margin-left: 5px;
+}
+
+a {
+  color: black;
+  font-size: 1.3em;
+  margin-left: 23em;
+  position: relative;
+}
+
+#return:hover {
+  color: red;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  margin-top: -3em;
+  margin-left: 7em;
+}
+
+.progress {
+  position: relative;
+  height: 10px;
+  width: 1110%;
+  border: 10px solid black;
+  border-radius: 15px;
+  margin-top: 7em;
+}
+
+.progress .color {
+  position: absolute;
+  background-color: #ffffff;
+  width: 0px;
+  height: 10px;
+  border-radius: 15px;
+  animation: progres 4s infinite linear;
+}
+
+@keyframes progres {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  75% {
+    width: 85%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*Tablette*/
+  #return {
+    margin-left: 1.7em;
+  }
+  body {
+    background-size: 1550px 930px;
+  }
+  li,
+  p {
+    margin-top: 4em;
+  }
+}
